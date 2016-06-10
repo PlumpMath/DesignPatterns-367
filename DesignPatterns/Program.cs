@@ -39,6 +39,15 @@ namespace DesignPatterns
             //===========================================================================
             Console.WriteLine();
             Console.WriteLine();
+            //================STRATEGY===================================================
+            Context context;
+            context = new Context(new StrategyA());
+            context.ContextInterface();
+            context = new Context(new StrategyB());
+            context.ContextInterface();
+            //===========================================================================
+            Console.WriteLine();
+            Console.WriteLine();
             //================OBSERVER===================================================
             Observable provider = new Observable();
             Observer reciever = new Observer();
