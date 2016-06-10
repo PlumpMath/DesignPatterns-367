@@ -36,7 +36,7 @@ namespace DesignPatterns
             this._strategy = strategy;
         }
 
-        public void ContextInterface()
+        public void doAction()
         {
             _strategy.doAction();
         }
